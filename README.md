@@ -255,6 +255,11 @@ log-append  /var/log/openvpn/openvpn.log
 
 # Nível de detalhe do log (3 é um bom padrão)
 verb 3
+
+# Tamanho máximo de trasmissão de unidades(MTU) - TCP
+tun-mtu 1450
+# Tamanho máximo de transmissão de segmentos (MSS) - UDP
+mssfix 1410
 ```
 
 Agora habilite e inicie o serviço OpenVPN:
